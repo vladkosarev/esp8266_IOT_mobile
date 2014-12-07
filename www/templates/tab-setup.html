@@ -1,0 +1,21 @@
+<ion-view title="ESP8266 IoT Setup">
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="IP" ng-model="request.ip">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="ssid" ng-model="request.ssid">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="password" ng-model="request.password">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="token" ng-model="request.token">
+            </label>
+        </div>
+        <button class="button button-block button-positive" ng-click="post(request)">
+            POST
+        </button>
+    </ion-content>
+</ion-view>

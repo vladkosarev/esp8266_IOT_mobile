@@ -1,0 +1,44 @@
+<ion-view title="ESP8266 IoT Info">
+    <ion-content class="padding">
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="IP" ng-model="ip">
+            </label>
+            <button class="button button-small button-positive" ng-click="getInfo()">
+                Get Info
+            </button>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                wifi
+            </div>
+            <div class="item item-text-wrap">
+                <pre>{{wifi | json}}</pre>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                info
+            </div>
+            <div class="item item-text-wrap">
+                <pre>{{info | json}}</pre>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                status
+            </div>
+            <div class="item item-text-wrap">
+                <pre>{{status | json}}</pre>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                scan
+            </div>
+            <div class="item item-text-wrap">
+                <pre>{{scan | json}}</pre>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
