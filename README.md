@@ -2,6 +2,7 @@ esp8266_IOT_mobile
 ==================
 __Ionic based app for control of esp8266 IoT demo__
 
+This app needs CORS support so you will need a patched version of IoT demo - https://github.com/vladkosarev/esp8266_IOT
 
 ###Installing.
 
