@@ -2,10 +2,10 @@
 <widget id="com.ionicframework.esp2866app817070" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>esp2866app</name>
   <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+        Mobile app helper for ESP8266 IoT demo
+  </description>
+  <author email="" href="http://www.webmustflow.com/">
+      Vlad Kosarev
     </author>
   <content src="index.html"/>
   <access origin="*"/>

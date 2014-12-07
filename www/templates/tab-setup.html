@@ -1,6 +1,11 @@
 <ion-view title="ESP8266 IoT Setup">
     <ion-content class="padding">
         <div class="list">
+            <div class="card" ng-show="response" >
+                <div class="item item-text-wrap" ng-class="{'item-assertive': !success, 'item-balanced' : success}">
+                        {{response}}
+                </div>
+            </div>
             <label class="item item-input">
                 <input type="text" placeholder="IP" ng-model="request.ip">
             </label>
@@ -14,8 +19,8 @@
                 <input type="text" placeholder="token" ng-model="request.token">
             </label>
         </div>
-        <button class="button button-block button-positive" ng-click="post(request)">
-            POST
+        <button class="button button-block button-positive" ng-click="post(request)" ng-disabled="submitted">
+            Submit WiFi/IoT Configuration
         </button>
     </ion-content>
 </ion-view>

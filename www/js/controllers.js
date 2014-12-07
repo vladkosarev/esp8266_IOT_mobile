@@ -36,6 +36,8 @@ angular.module('starter.controllers', [])
         $scope.request.ip = "192.168.4.1";
         $scope.request.token = "";
         $scope.post = function (request) {
+            $scope.submitted = true;
+            $scope.response = null;
             var requestToSend =
             {
                 "Request": {
@@ -53,7 +55,15 @@ angular.module('starter.controllers', [])
             requestToSend.Request.Station.Connect_Station.token = request.token;
             $http.post('http://192.168.4.1/config?command=wifi', requestToSend).
                 success(function (data, status, headers, config) {
+                    var response = data ? data : "SUCCESS!";
+                    $scope.response = response;
+                    $scope.submitted = false;
+                    $scope.success = true;
                 }).error(function (data, status, headers, config) {
+                    var error = data ? data : "Unknown Error";
+                    $scope.response = error;
+                    $scope.submitted = false;
+                    $scope.success = false;
                 });
         };
     });

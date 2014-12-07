@@ -1,7 +1,7 @@
 {
   "name": "esp2866app",
   "version": "1.0.0",
-  "description": "esp2866app: An Ionic project",
+  "description": "esp2866app",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
